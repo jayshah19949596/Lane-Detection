@@ -14,13 +14,12 @@ This project is written in python3 and uses OpenCv for applying computer vision
 6. Average/extrapolate the lines to draw lane lines
 7. Overlay two images
 
-![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Grey.PNG")
-
 ## Step 1: **Reading the image and  convert it to Grey Scale** 
 *** 
 - Used matplotlib to read the image  `mpimg.imread('test.jpg')` 
 - Used OpenCv to conver the read image to grey scale by `cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)`
 - The result is in the below image :
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Grey.PNG")
 
 ## Step 2: **Apply Gaussian Filter** 
 *** 
@@ -29,7 +28,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - `kernel_size` is the size of the filter to be applied on the grey scale image.
 - The gaussian filter smoothens the image and results in a blur image.
 - The result is in the below image :
-![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Gaussian.PNG")
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Gaussian.PNG")
 
 ## Step 3: **Apply Canny Edge Detection ** 
 *** 
@@ -39,7 +38,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - `high_threshold`: All the pixel values above the `high_threshold` value are kept.
 - The pixel Values in between the `low_threshold` and `high_threshold` is only kept if they are connected to a pixel above the `high_threshold`.
 - The edged image is shown below :
-![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny.PNG")
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny.PNG")
 
 ## Step 4: **Find Region of Interest ** 
 *** 
@@ -47,12 +46,11 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - `cv2.fillPoly(mask, vertices, ignore_mask_color)`
 - `vertices` : Numpy array with vertices of polygon to be redrawn.
 - The result image is below :
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Lines_on_blank.PNG)
 
 - `cv2.bitwise_and()` for eleminating all the edges outside the region of interest .
 - So now the edges in the image is only inside the region of interest.
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny_after_roi.PNG)
 
 
 ## Step 5: **Detect Lines ** 
@@ -70,5 +68,5 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - A point in real world is a line in hough space
 - The point in hough space where lines meet more then a threshold that point is considered to be a line in real world
 - The result of lines detected by hough transformation is shown below:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Final.PNG)
 
