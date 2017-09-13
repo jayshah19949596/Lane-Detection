@@ -48,11 +48,11 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - `vertices` : Numpy array with vertices of polygon to be redrawn.
 - The result image is below :
 
-![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Lines_on_blank.PNG")
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 - `cv2.bitwise_and()` for eleminating all the edges outside the region of interest .
 - So now the edges in the image is only inside the region of interest.
-![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny_after_roi.PNG")
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 
 ## Step 5: **Detect Lines ** 
@@ -70,5 +70,5 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - A point in real world is a line in hough space
 - The point in hough space where lines meet more then a threshold that point is considered to be a line in real world
 - The result of lines detected by hough transformation is shown below:
-![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Final.PNG")
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
