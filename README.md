@@ -38,7 +38,8 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - `high_threshold`: All the pixel values above the `high_threshold` value are kept.
 - The pixel Values in between the `low_threshold` and `high_threshold` is only kept if they are connected to a pixel above the `high_threshold`.
 - The edged image is shown below :
-![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny.PNG")
+
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny.PNG)
 
 ## Step 4: **Find Region of Interest ** 
 *** 
@@ -46,10 +47,12 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - `cv2.fillPoly(mask, vertices, ignore_mask_color)`
 - `vertices` : Numpy array with vertices of polygon to be redrawn.
 - The result image is below :
+
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Lines_on_blank.PNG)
 
 - `cv2.bitwise_and()` for eleminating all the edges outside the region of interest .
 - So now the edges in the image is only inside the region of interest.
+
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny_after_roi.PNG)
 
 
