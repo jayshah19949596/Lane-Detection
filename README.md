@@ -19,7 +19,8 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - Used matplotlib to read the image  `mpimg.imread('test.jpg')` 
 - Used OpenCv to conver the read image to grey scale by `cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)`
 - The result is in the below image :
-![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Grey.PNG")
+
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Grey.PNG)
 
 ## Step 2: **Apply Gaussian Filter** 
 *** 
@@ -28,7 +29,8 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - `kernel_size` is the size of the filter to be applied on the grey scale image.
 - The gaussian filter smoothens the image and results in a blur image.
 - The result is in the below image :
-![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Gaussian.PNG")
+
+![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Gaussian.PNG)
 
 ## Step 3: **Apply Canny Edge Detection ** 
 *** 
