@@ -88,7 +88,8 @@ This project is written in python3 and uses OpenCv for applying computer vision
 ***
 - Used `cv2.weight()` for merging two images 
 - Merging the original image with the image that has two laveraged lines 
-- Got the below final result 
+- Got the below final result:
+
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Final.PNG)
 
 - The video link for my result is :
