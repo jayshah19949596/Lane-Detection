@@ -70,3 +70,4 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - The point in hough space where lines meet more then a threshold that point is considered to be a line in real world
 - The result of lines detected by hough transformation is shown below:
 ![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Final.PNG")
+
