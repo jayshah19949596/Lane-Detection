@@ -19,7 +19,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - Used matplotlib to read the image  `mpimg.imread('test.jpg')` 
 - Used OpenCv to conver the read image to grey scale by `cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)`
 - The result is in the below image :
-![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Grey.PNG")
+- ![alt text](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Grey.PNG")
 
 ## Step 2: **Apply Gaussian Filter ** 
 *** 
