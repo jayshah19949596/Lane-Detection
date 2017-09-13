@@ -22,7 +22,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Grey.PNG)
 
-## Step 2: **Apply Gaussian Filter** 
+## Step 2: Apply Gaussian Filter 
 *** 
 - Used OpenCV to apply gaussian filter.
 - `cv2.GaussianBlur(img, (kernel_size, kernel_size), 0)`
@@ -32,7 +32,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Gaussian.PNG)
 
-## Step 3: **Apply Canny Edge Detection ** 
+## Step 3: Apply Canny Edge Detection 
 *** 
 - Used OpenCV to apply Canny edge.
 - `cv2.Canny(img, low_threshold, high_threshold)`
@@ -43,7 +43,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny.PNG)
 
-## Step 4: **Find Region of Interest ** 
+## Step 4: Find Region of Interest 
 *** 
 - Used OpenCV to find region of interest.
 - `cv2.fillPoly(mask, vertices, ignore_mask_color)`
@@ -58,7 +58,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Canny_after_roi.PNG)
 
 
-## Step 5: **Detect Lines ** 
+## Step 5: Detect Lines 
 *** 
 - Used OpenCV to detect line.
 - The technique used is called Hough lines
