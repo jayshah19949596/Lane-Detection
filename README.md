@@ -73,5 +73,25 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - A point in real world is a line in hough space
 - The point in hough space where lines meet more then a threshold that point is considered to be a line in real world
 - The result of lines detected by hough transformation is shown below:
+
+## Step 6: Average/extrapolate the lines to draw lane lines
+*** 
+- I averaged all the points where lines were found using `cv2.HoughLinesP()`
+- I found that left lines had a negative slope and right lanes had positive slope
+- I ignored line that were horizontal and vertical
+- Lines that had a very less slope that were almost horizontal lines, I ignored them too
+- I took average of points of left lines seperately and average of right lines seperately
+- and then I found average points for left line and average points for right line
+- Based on the average points I calculated the slope value and drew lines
+
+## Step 7: Average/extrapolate the lines to draw lane lines
+***
+- Used `cv2.weight()` for merging two images 
+- Merging the original image with the image that has two laveraged lines 
+- Got the below final result 
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Final.PNG)
+
+- The video link for my result is :
+<a href="https://github.com/jayshah19949596/Lane-Detection/blob/master/test_videos/solidWhiteRight.mp4
+" target="_blank"></a>
 
