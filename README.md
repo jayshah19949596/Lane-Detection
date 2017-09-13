@@ -93,7 +93,3 @@ This project is written in python3 and uses OpenCv for applying computer vision
 
 ![ScreenShot](https://github.com/jayshah19949596/Lane-Detection/blob/master/Images/Final.PNG)
 
-- The video link for my result is :
-<a href="https://github.com/jayshah19949596/Lane-Detection/blob/master/test_videos/solidWhiteRight.mp4
-" target="_blank"></a>
-
