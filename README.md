@@ -83,6 +83,7 @@ This project is written in python3 and uses OpenCv for applying computer vision
 - I took average of points of left lines seperately and average of right lines seperately
 - and then I found average points for left line and average points for right line
 - Based on the average points I calculated the slope value and drew lines
+- Used `cv2.line(img, (x1, y1), (x2, y2), color, thickness)` function which draws lines
 
 ## Step 7: Average/extrapolate the lines to draw lane lines
 ***
